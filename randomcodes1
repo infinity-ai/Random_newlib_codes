@@ -1,0 +1,62 @@
+
+
+import sys
+
+while True:
+    response = input()
+    if response == "exit":
+        print('You typed {}'.format(response))
+        sys.exit()
+    print('You typed {}'.format(response))
+for i in range(10):
+    print(i)
+
+i = 0
+
+while i < 10:
+    print(i)
+    i+=1
+
+import random
+
+a = random.randint(0,10)
+
+print("Random integer is {}".format(a))
+
+import contextlib
+
+with contextlib.suppress(NameError):
+    print(a)
+
+b= 5
+
+print(b)
+
+
+def collatz(number):
+    if number%2 == 0:
+        return (number//2)
+    else:
+        return 3*number + 1
+
+
+print(dir(print))
+
+print('Hello', '', end='', sep=',')
+print("World")
+
+
+def collatz(number):
+    if number%2 == 0:
+        print(number//2)
+        return (number//2)
+    else:
+        print(3*number + 1)
+        return 3*number + 1
+
+import contextlib
+
+with contextlib.suppress(ValueError):
+    collatz(int(input()))
+
+collatz(int(input()))

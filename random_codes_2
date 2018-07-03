@@ -1,0 +1,40 @@
+import copy
+a = [1,2,3,4,5456,67675675647,345345, 546546,4565464564,7876456]
+print(a[-1])
+print(a[0:-3])
+b = [4324,3423,423,456,523,65]
+print(a+b)
+c= b*3
+print(c)
+cat = ['black', 'calm', 'dcf3123', [1,2,3,4,5,5,6,7]]
+a, color, character, number = cat
+cat.insert(1, 'aa')
+cat.sort(key=str.lower)
+name = 'black'
+
+print(name[-1])
+
+cat[0] = 'white'
+
+print(type(cat[0]))
+
+Dog = copy.copy(cat)
+Dog1 = copy.deepcopy(cat)
+Dog[1] = 'Angry'
+print(cat)
+print(Dog)
+print(Dog1)
+
+cat.append('sdfsd')
+cat[1] = 'nice'
+
+print(cat)
+d = copy.copy(cat)
+print(d)
+
+def string(l):
+    for i in l:
+        print(i, end=', ')
+    return None
+
+string(cat)

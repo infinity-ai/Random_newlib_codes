@@ -1,7 +1,7 @@
 #! usr/bin/python3
 # password_locker - a password locker program
 import sys, pyperclip
-password = {'email':'saiakash@4', 'office_pc':'novaone@001', 'personal_pc':'inf944@4'}
+password = {'email':'******', 'office_pc':'ABC', 'personal_pc':'12345'}
 
 if len(sys.argv) < 2:
     print('Usage: python pw.py [account] - copy account password')
